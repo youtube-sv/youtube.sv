@@ -5,12 +5,17 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
+
     /* =====================================================
        MENU MOBILE
     ===================================================== */
 
-    const menuButton = document.getElementById("menuButton");
-    const sidebar = document.getElementById("sidebar");
+    const menuButton =
+        document.getElementById("menuButton");
+
+    const sidebar =
+        document.getElementById("sidebar");
+
 
     if (menuButton && sidebar) {
 
@@ -20,41 +25,71 @@ document.addEventListener("DOMContentLoaded", () => {
 
         });
 
+
+        const sidebarLinks =
+            sidebar.querySelectorAll("a");
+
+
+        sidebarLinks.forEach((link) => {
+
+            link.addEventListener("click", () => {
+
+                if (window.innerWidth <= 700) {
+
+                    sidebar.classList.remove(
+                        "mobile-open"
+                    );
+
+                }
+
+            });
+
+        });
+
     }
 
 
+
     /* =====================================================
-       RECHERCHE
+       FORMULAIRE DE RECHERCHE
     ===================================================== */
 
     const searchForm =
         document.querySelector(".search-box");
 
     const searchInput =
-        document.querySelector(".search-box input");
+        document.querySelector(
+            ".search-box input"
+        );
 
 
     if (searchForm && searchInput) {
 
-        searchForm.addEventListener("submit", (event) => {
+        searchForm.addEventListener(
+            "submit",
+            (event) => {
 
-            event.preventDefault();
-
-            const searchValue =
-                searchInput.value.trim();
+                event.preventDefault();
 
 
-            if (searchValue !== "") {
+                const searchValue =
+                    searchInput.value.trim();
 
-                alert(
-                    "Sökning: " + searchValue
-                );
+
+                if (searchValue !== "") {
+
+                    alert(
+                        "Sökning: " +
+                        searchValue
+                    );
+
+                }
 
             }
-
-        });
+        );
 
     }
+
 
 
     /* =====================================================
@@ -62,25 +97,37 @@ document.addEventListener("DOMContentLoaded", () => {
     ===================================================== */
 
     const categories =
-        document.querySelectorAll(".category");
+        document.querySelectorAll(
+            ".category"
+        );
 
 
     categories.forEach((category) => {
 
-        category.addEventListener("click", () => {
+        category.addEventListener(
+            "click",
+            () => {
 
-            categories.forEach((item) => {
+                categories.forEach(
+                    (item) => {
 
-                item.classList.remove("active");
+                        item.classList.remove(
+                            "active"
+                        );
 
-            });
+                    }
+                );
 
 
-            category.classList.add("active");
+                category.classList.add(
+                    "active"
+                );
 
-        });
+            }
+        );
 
     });
+
 
 
     /* =====================================================
@@ -95,34 +142,50 @@ document.addEventListener("DOMContentLoaded", () => {
 
     contactButtons.forEach((button) => {
 
-        button.addEventListener("click", () => {
+        button.addEventListener(
+            "click",
+            () => {
 
-            if (
-                typeof Tawk_API !== "undefined" &&
-                typeof Tawk_API.maximize === "function"
-            ) {
 
-                Tawk_API.maximize();
+                if (
 
-            } else {
+                    typeof Tawk_API !==
+                    "undefined"
 
-                alert(
-                    "Livechatten laddas, vänligen vänta ett ögonblick..."
-                );
+                    &&
+
+                    typeof Tawk_API.maximize ===
+                    "function"
+
+                ) {
+
+                    Tawk_API.maximize();
+
+                }
+
+                else {
+
+                    alert(
+                        "Livechatten laddas, " +
+                        "vänligen vänta ett ögonblick..."
+                    );
+
+                }
 
             }
-
-        });
+        );
 
     });
 
 
+
     /* =====================================================
-       YOUTUBE STREAMING — READY
+       CONSOLE
     ===================================================== */
 
     console.log(
-        "YouTube Streaming — Gränssnitt laddat."
+        "YouTube Streaming — " +
+        "Gränssnitt laddat."
     );
 
 });
