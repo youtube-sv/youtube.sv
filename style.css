@@ -1771,6 +1771,17 @@ input {
 
 
 /* =========================================================
+   FOOTER MOBILE
+   Caché sur ordinateur
+========================================================= */
+
+.mobile-footer {
+
+    display: none;
+}
+
+
+/* =========================================================
    TABLET
 ========================================================= */
 
@@ -1834,8 +1845,8 @@ input {
 
 
     .brand-text {
-    display: block;
-}
+        display: block;
+    }
 
 
     .brand-icon {
@@ -2155,6 +2166,65 @@ input {
 
     .information-section p {
         font-size: 12px;
+    }
+
+
+    /* =====================================================
+       FOOTER MOBILE
+    ===================================================== */
+
+    .mobile-footer {
+
+        display: block;
+
+        margin-top: 40px;
+
+        padding:
+            25px 8px 35px;
+
+        border-top:
+            1px solid #e5e7eb;
+
+        color: #6b7280;
+
+        font-size: 11px;
+
+        text-align: left;
+    }
+
+
+    .mobile-footer p {
+
+        margin:
+            0 0 12px;
+
+        font-size: 11px;
+    }
+
+
+    .mobile-footer-links {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 9px;
+    }
+
+
+    .mobile-footer-links a {
+
+        color: #64748b;
+
+        font-size: 11px;
+
+        text-decoration: none;
+    }
+
+
+    .mobile-footer-links a:hover {
+
+        color: #111827;
     }
 
 }
