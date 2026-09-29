@@ -1,54 +1,99 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>YouTube Streaming — Hjälpcenter</title>
 
     <!-- FAVICON -->
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./favicon-16x16.png" type="image/png" sizes="16x16">
-    <link rel="icon" href="./favicon-32x32.png" type="image/png" sizes="32x32">
-    <link rel="apple-touch-icon" href="./apple-touch-icon.png" sizes="180x180">
+
+    <link rel="icon"
+          href="./favicon.ico"
+          type="image/x-icon">
+
+    <link rel="icon"
+          href="./favicon-16x16.png"
+          type="image/png"
+          sizes="16x16">
+
+    <link rel="icon"
+          href="./favicon-32x32.png"
+          type="image/png"
+          sizes="32x32">
+
+    <link rel="apple-touch-icon"
+          href="./apple-touch-icon.png"
+          sizes="180x180">
+
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="style.css">
+
 
     <!-- FONT AWESOME -->
+
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
+
 
 <body>
 
+
 <header class="topbar">
+
 
     <div class="topbar-left">
 
-        <button class="menu-button" id="menuButton" aria-label="Öppna meny">
+
+        <button class="menu-button"
+                id="menuButton"
+                aria-label="Öppna meny">
+
             <i class="fa-solid fa-bars"></i>
+
         </button>
+
 
         <a href="#" class="brand">
 
+
             <div class="brand-icon">
+
                 <i class="fa-solid fa-play"></i>
+
             </div>
+
 
             <div class="brand-text">
+
                 <strong>YouTube</strong>
+
                 <small>Streaming</small>
+
             </div>
 
+
         </a>
+
 
     </div>
 
 
+
     <div class="search-container">
 
+
         <form class="search-box">
+
 
             <input
                 type="text"
@@ -56,20 +101,32 @@
                 aria-label="Sök"
             >
 
-            <button type="submit" aria-label="Sök">
+
+            <button type="submit"
+                    aria-label="Sök">
+
                 <i class="fa-solid fa-magnifying-glass"></i>
+
             </button>
+
 
         </form>
 
-        <button class="voice-button" aria-label="Röstsökning">
+
+        <button class="voice-button"
+                aria-label="Röstsökning">
+
             <i class="fa-solid fa-microphone"></i>
+
         </button>
+
 
     </div>
 
 
+
     <div class="topbar-actions">
+
 
         <button class="create-button contact-button">
 
@@ -89,13 +146,50 @@
         </button>
 
 
-        <button class="profile-button">
-            SE
-        </button>
+        <!-- LANGUAGE SELECTOR -->
+
+        <div class="language-selector">
+
+
+            <button class="language-button"
+                    type="button">
+
+                SE SV
+
+                <span>⌄</span>
+
+            </button>
+
+
+            <div class="language-menu">
+
+                <button type="button">
+                    FR FR
+                </button>
+
+                <button type="button">
+                    GB EN
+                </button>
+
+                <button type="button">
+                    SE SV
+                </button>
+
+                <button type="button">
+                    NO NO
+                </button>
+
+            </div>
+
+
+        </div>
+
 
     </div>
 
+
 </header>
+
 
 
 <div class="page-layout">
@@ -103,119 +197,189 @@
 
     <!-- SIDEBAR -->
 
-    <aside class="sidebar" id="sidebar">
+    <aside class="sidebar"
+           id="sidebar">
+
 
         <nav class="sidebar-nav">
 
-            <a href="#" class="sidebar-link active">
+
+            <a href="#"
+               class="sidebar-link active">
+
 
                 <span class="sidebar-icon">
+
                     <i class="fa-solid fa-house"></i>
+
                 </span>
+
 
                 <span>Start</span>
 
+
             </a>
 
 
-            <a href="#guider" class="sidebar-link">
+
+            <a href="#guider"
+               class="sidebar-link">
+
 
                 <span class="sidebar-icon">
+
                     <i class="fa-solid fa-compass"></i>
+
                 </span>
+
 
                 <span>Utforska</span>
 
+
             </a>
 
 
-            <a href="#hjalp" class="sidebar-link">
+
+            <a href="#hjalp"
+               class="sidebar-link">
+
 
                 <span class="sidebar-icon">
+
                     <i class="fa-solid fa-circle-question"></i>
+
                 </span>
+
 
                 <span>Hjälpcenter</span>
 
+
             </a>
 
 
+
             <div class="sidebar-separator"></div>
+
 
 
             <div class="sidebar-title">
+
                 Kategorier
+
             </div>
 
 
-            <a href="#" class="sidebar-link">
+
+            <a href="#"
+               class="sidebar-link">
+
 
                 <span class="sidebar-icon">
+
                     <i class="fa-solid fa-user-gear"></i>
+
                 </span>
+
 
                 <span>Konto &amp; Säkerhet</span>
 
+
             </a>
 
 
-            <a href="#" class="sidebar-link">
+
+            <a href="#"
+               class="sidebar-link">
+
 
                 <span class="sidebar-icon">
+
                     <i class="fa-solid fa-coins"></i>
+
                 </span>
+
 
                 <span>Monetarisering</span>
 
+
             </a>
 
 
-            <a href="#" class="sidebar-link">
+
+            <a href="#"
+               class="sidebar-link">
+
 
                 <span class="sidebar-icon">
+
                     <i class="fa-solid fa-shield-halved"></i>
+
                 </span>
+
 
                 <span>Riktlinjer</span>
 
+
             </a>
+
 
 
             <div class="sidebar-separator"></div>
 
 
-            <a href="#" class="sidebar-link contact-button">
+
+            <a href="#"
+               class="sidebar-link contact-button">
+
 
                 <span class="sidebar-icon">
+
                     <i class="fa-solid fa-comments"></i>
+
                 </span>
+
 
                 <span>Direktchatt</span>
 
+
             </a>
 
+
         </nav>
+
 
 
         <!-- FOOTER SIDEBAR -->
 
         <div class="sidebar-footer">
 
+
             <p>
+
                 &copy; 2026 YouTube Streaming
+
             </p>
 
-            <a href="#">
-                Integritetspolicy
-            </a>
 
             <a href="#">
-                Användarvillkor
+
+                Integritetspolicy
+
             </a>
+
+
+            <a href="#">
+
+                Användarvillkor
+
+            </a>
+
 
         </div>
 
+
     </aside>
+
 
 
     <!-- CONTENU PRINCIPAL -->
@@ -227,57 +391,86 @@
 
         <div class="category-bar">
 
+
             <button class="category active">
+
                 Alla
+
             </button>
 
+
             <button class="category">
+
                 Kontorensning
+
             </button>
 
+
             <button class="category">
+
                 Upphovsrätt
+
             </button>
 
+
             <button class="category">
+
                 Kanalinställningar
+
             </button>
 
+
             <button class="category">
+
                 Säkerhet
+
             </button>
 
+
             <button class="category">
+
                 YouTube Studio
+
             </button>
+
 
         </div>
+
 
 
         <!-- HERO -->
 
         <section class="hero">
 
+
             <div class="hero-content">
 
+
                 <span class="hero-badge">
+
                     YOUTUBE STREAMING 2026
+
                 </span>
 
 
                 <h1>
+
                     Hur kan vi hjälpa dig idag?
+
                 </h1>
 
 
                 <p>
+
                     Få snabb hjälp med ditt YouTube-konto,
                     hantera dina kanalinställningar och lös
                     tekniska problem direkt med vårt team.
+
                 </p>
 
 
                 <div class="hero-buttons">
+
 
                     <button class="primary-button contact-button">
 
@@ -288,7 +481,8 @@
                     </button>
 
 
-                    <a href="#guider" class="secondary-button">
+                    <a href="#guider"
+                       class="secondary-button">
 
                         <i class="fa-solid fa-book-open"></i>
 
@@ -296,24 +490,32 @@
 
                     </a>
 
+
                 </div>
 
+
             </div>
+
 
 
             <!-- IMAGE / ANIMATION -->
 
             <div class="hero-visual">
 
+
                 <div class="hero-glow"></div>
 
 
                 <div class="hero-device">
 
+
                     <div class="device-screen">
 
+
                         <div class="device-play">
+
                             <i class="fa-solid fa-play"></i>
+
                         </div>
 
 
@@ -325,7 +527,9 @@
 
                         </div>
 
+
                     </div>
+
 
                 </div>
 
@@ -356,31 +560,45 @@
 
                 </div>
 
+
             </div>
+
 
         </section>
 
 
+
         <!-- GUIDES -->
 
-        <section class="content-section" id="guider">
+        <section class="content-section"
+                 id="guider">
+
 
             <div class="section-header">
 
+
                 <div>
 
+
                     <span class="section-label">
+
                         HJÄLPARTIKLAR
+
                     </span>
 
+
                     <h2>
+
                         Populära guider
+
                     </h2>
+
 
                 </div>
 
 
-                <a href="#" class="see-all">
+                <a href="#"
+                   class="see-all">
 
                     Visa alla
 
@@ -388,7 +606,9 @@
 
                 </a>
 
+
             </div>
+
 
 
             <div class="video-grid">
@@ -398,59 +618,85 @@
 
                 <article class="video-card">
 
+
                     <div class="thumbnail thumbnail-one">
+
 
                         <div class="animated-art art-account">
 
+
                             <div class="art-ring"></div>
+
 
                             <i class="fa-solid fa-user"></i>
 
+
                             <div class="art-dot dot-a"></div>
+
                             <div class="art-dot dot-b"></div>
+
 
                         </div>
 
 
                         <span class="thumbnail-badge">
+
                             KONTO
+
                         </span>
 
 
                         <strong>
+
                             Radera eller inaktivera kanal
+
                         </strong>
 
 
                         <span class="duration">
+
                             3 min läsning
+
                         </span>
+
 
                     </div>
 
 
+
                     <div class="video-info">
 
+
                         <div class="channel-avatar">
+
                             YS
+
                         </div>
 
 
                         <div>
 
+
                             <h3>
+
                                 Hur du tar bort din YouTube-kanal permanent
+
                             </h3>
 
 
                             <p>
+
                                 YouTube Streaming • Steg-för-steg
+
                             </p>
 
 
                             <span>
+
                                 Uppdaterad för 2026
+
                             </span>
+
 
                         </div>
 
@@ -461,67 +707,95 @@
 
                         </button>
 
+
                     </div>
 
+
                 </article>
+
 
 
                 <!-- CARTE 2 -->
 
                 <article class="video-card">
 
+
                     <div class="thumbnail thumbnail-two">
+
 
                         <div class="animated-art art-security">
 
+
                             <div class="shield-pulse"></div>
+
 
                             <i class="fa-solid fa-shield-halved"></i>
 
+
                             <div class="scan-line"></div>
+
 
                         </div>
 
 
                         <span class="thumbnail-badge">
+
                             SÄKERHET
+
                         </span>
 
 
                         <strong>
+
                             Återställ hackat konto
+
                         </strong>
 
 
                         <span class="duration">
+
                             5 min läsning
+
                         </span>
+
 
                     </div>
 
 
+
                     <div class="video-info">
 
+
                         <div class="channel-avatar">
+
                             YS
+
                         </div>
 
 
                         <div>
 
+
                             <h3>
+
                                 Skydda och återställ din profil snabbt
+
                             </h3>
 
 
                             <p>
+
                                 YouTube Streaming • Säkerhet
+
                             </p>
 
 
                             <span>
+
                                 Viktig information
+
                             </span>
+
 
                         </div>
 
@@ -532,20 +806,27 @@
 
                         </button>
 
+
                     </div>
 
+
                 </article>
+
 
 
                 <!-- CARTE 3 -->
 
                 <article class="video-card">
 
+
                     <div class="thumbnail thumbnail-three">
+
 
                         <div class="animated-art art-copyright">
 
+
                             <div class="copyright-orbit"></div>
+
 
                             <i class="fa-solid fa-copyright"></i>
 
@@ -560,48 +841,68 @@
 
                             </div>
 
+
                         </div>
 
 
                         <span class="thumbnail-badge">
+
                             UPPHOVSRÄTT
+
                         </span>
 
 
                         <strong>
+
                             Hantera Copyright-anspråk
+
                         </strong>
 
 
                         <span class="duration">
+
                             4 min läsning
+
                         </span>
+
 
                     </div>
 
 
+
                     <div class="video-info">
 
+
                         <div class="channel-avatar">
+
                             YS
+
                         </div>
 
 
                         <div>
 
+
                             <h3>
+
                                 Vad gör du om du får en upphovsrättsvarning?
+
                             </h3>
 
 
                             <p>
+
                                 YouTube Streaming • Riktlinjer
+
                             </p>
 
 
                             <span>
+
                                 Guide
+
                             </span>
+
 
                         </div>
 
@@ -612,29 +913,43 @@
 
                         </button>
 
+
                     </div>
+
 
                 </article>
 
+
             </div>
+
 
         </section>
 
 
+
         <!-- CONTACT -->
 
-        <section class="quick-help" id="hjalp">
+        <section class="quick-help"
+                 id="hjalp">
+
 
             <div>
 
+
                 <h2>
+
                     Behöver du personlig assistance?
+
                 </h2>
 
+
                 <p>
+
                     Våra rådgivare finns tillgängliga för att
                     svara på dina frågor i realtid via chatt.
+
                 </p>
+
 
             </div>
 
@@ -647,12 +962,15 @@
 
             </button>
 
+
         </section>
+
 
 
         <!-- INFO 1 -->
 
         <section class="information-section">
+
 
             <div class="information-icon">
 
@@ -663,25 +981,35 @@
 
             <div>
 
+
                 <h2>
+
                     Integritet och Datasäkerhet
+
                 </h2>
 
+
                 <p>
+
                     Vi hjälper dig att rensa din sökhistorik,
                     hantera dina sekretessinställningar och
                     se till att din personliga information
                     förblir skyddad på plattformen.
+
                 </p>
+
 
             </div>
 
+
         </section>
+
 
 
         <!-- INFO 2 -->
 
         <section class="information-section">
+
 
             <div class="information-icon">
 
@@ -692,54 +1020,77 @@
 
             <div>
 
+
                 <h2>
+
                     Kanaloptimering
+
                 </h2>
 
+
                 <p>
+
                     Lär dig hur du ändrar ditt kanalnamn,
                     anpassar din URL och organiserar ditt
                     innehåll för att ge dina besökare den
                     bästa upplevelsen.
+
                 </p>
+
 
             </div>
 
+
         </section>
+
 
 
         <!-- FOOTER MOBILE -->
 
         <footer class="mobile-footer">
 
+
             <p>
+
                 &copy; 2026 YouTube Streaming
+
             </p>
 
 
             <div class="mobile-footer-links">
 
-                <a href="#">
-                    Integritetspolicy
-                </a>
 
                 <a href="#">
-                    Användarvillkor
+
+                    Integritetspolicy
+
                 </a>
+
+
+                <a href="#">
+
+                    Användarvillkor
+
+                </a>
+
 
             </div>
+
 
         </footer>
 
 
     </main>
 
+
 </div>
+
 
 
 <!-- JAVASCRIPT -->
 
 <script src="script.js"></script>
+
 
 
 <!-- TAWK.TO -->
@@ -750,22 +1101,30 @@
 
     var Tawk_LoadStart = new Date();
 
+
     (function () {
+
 
         var s1 = document.createElement("script");
 
         var s0 = document.getElementsByTagName("script")[0];
 
+
         s1.async = true;
+
 
         s1.src =
             "https://embed.tawk.to/6ab57b203e09603442ce30a9/1k3aehu16";
 
+
         s1.charset = "UTF-8";
+
 
         s1.setAttribute("crossorigin", "*");
 
+
         s0.parentNode.insertBefore(s1, s0);
+
 
     })();
 
@@ -773,4 +1132,5 @@
 
 
 </body>
+
 </html>
