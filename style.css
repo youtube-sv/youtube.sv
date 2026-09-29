@@ -95,13 +95,13 @@ input {
 
     gap: 20px;
 
-    background: rgba(255,255,255,.97);
+    background: rgba(255, 255, 255, .97);
 
     border-bottom:
         1px solid var(--border);
 
     box-shadow:
-        0 2px 12px rgba(0,0,0,.04);
+        0 2px 12px rgba(0, 0, 0, .04);
 
     backdrop-filter: blur(20px);
 }
@@ -325,6 +325,138 @@ input {
 }
 
 
+/* =========================================================
+   LANGUAGE SELECTOR
+========================================================= */
+
+.language-selector {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.language-button {
+
+    min-width: 72px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 0 10px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 20px;
+
+    background: #fff;
+
+    color: #111827;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+
+.language-button:hover {
+
+    background: #f5f6f8;
+}
+
+
+.language-button span {
+
+    font-size: 12px;
+
+    line-height: 1;
+}
+
+
+.language-menu {
+
+    position: absolute;
+
+    top: calc(100% + 8px);
+
+    right: 0;
+
+    min-width: 105px;
+
+    padding: 6px;
+
+    display: none;
+
+    flex-direction: column;
+
+    gap: 2px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    background: #fff;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, .12);
+
+    z-index: 1100;
+}
+
+
+.language-menu button {
+
+    width: 100%;
+
+    min-height: 36px;
+
+    padding: 0 10px;
+
+    border: 0;
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #374151;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    text-align: left;
+
+    cursor: pointer;
+}
+
+
+.language-menu button:hover {
+
+    background: #f3f4f6;
+
+    color: #111827;
+}
+
+
+/* =========================================================
+   CREATE BUTTON
+========================================================= */
+
 .create-button {
 
     border:
@@ -341,6 +473,10 @@ input {
     cursor: pointer;
 }
 
+
+/* =========================================================
+   NOTIFICATIONS
+========================================================= */
 
 .notification-button {
 
@@ -387,6 +523,10 @@ input {
     font-weight: 700;
 }
 
+
+/* =========================================================
+   PROFILE
+========================================================= */
 
 .profile-button {
 
@@ -511,8 +651,7 @@ input {
 }
 
 
-.sidebar-link.active
-.sidebar-icon {
+.sidebar-link.active .sidebar-icon {
 
     color: var(--red);
 }
@@ -601,7 +740,7 @@ input {
     overflow-x: auto;
 
     background:
-        rgba(255,255,255,.96);
+        rgba(255, 255, 255, .96);
 
     border-bottom:
         1px solid #f0f1f3;
@@ -804,7 +943,7 @@ input {
 
     box-shadow:
         0 8px 20px
-        rgba(255,0,51,.18);
+        rgba(255, 0, 51, .18);
 }
 
 
@@ -850,7 +989,7 @@ input {
     border-radius: 50%;
 
     background:
-        rgba(255,0,51,.06);
+        rgba(255, 0, 51, .06);
 
     filter: blur(20px);
 }
@@ -874,7 +1013,7 @@ input {
 
     box-shadow:
         0 20px 45px
-        rgba(0,0,0,.18);
+        rgba(0, 0, 0, .18);
 }
 
 
@@ -938,7 +1077,7 @@ input {
     border-radius: 10px;
 
     background:
-        rgba(255,255,255,.75);
+        rgba(255, 255, 255, .75);
 }
 
 
@@ -1067,7 +1206,7 @@ input {
     display: grid;
 
     grid-template-columns:
-        repeat(3,minmax(0,1fr));
+        repeat(3, minmax(0, 1fr));
 
     gap: 20px;
 }
@@ -1097,7 +1236,7 @@ input {
 
     border:
         1px solid
-        rgba(255,255,255,.2);
+        rgba(255, 255, 255, .2);
 
     border-radius: 13px;
 
@@ -1105,7 +1244,7 @@ input {
 
     box-shadow:
         0 8px 25px
-        rgba(0,0,0,.08);
+        rgba(0, 0, 0, .08);
 }
 
 
@@ -1121,7 +1260,7 @@ input {
         linear-gradient(
             115deg,
             transparent 35%,
-            rgba(255,255,255,.16) 50%,
+            rgba(255, 255, 255, .16) 50%,
             transparent 65%
         );
 
@@ -1198,7 +1337,7 @@ input {
     border-radius: 5px;
 
     background:
-        rgba(0,0,0,.35);
+        rgba(0, 0, 0, .35);
 
     font-size: 9px;
 
@@ -1221,7 +1360,7 @@ input {
     border-radius: 4px;
 
     background:
-        rgba(0,0,0,.7);
+        rgba(0, 0, 0, .7);
 
     font-size: 10px;
 }
@@ -1256,12 +1395,12 @@ input {
     font-size: 42px;
 
     color:
-        rgba(255,255,255,.94);
+        rgba(255, 255, 255, .94);
 
     filter:
         drop-shadow(
             0 8px 15px
-            rgba(0,0,0,.18)
+            rgba(0, 0, 0, .18)
         );
 }
 
@@ -1275,7 +1414,7 @@ input {
 
     border:
         2px solid
-        rgba(255,255,255,.42);
+        rgba(255, 255, 255, .42);
 
     border-radius: 50%;
 
@@ -1357,7 +1496,7 @@ input {
 
     border:
         2px solid
-        rgba(255,255,255,.5);
+        rgba(255, 255, 255, .5);
 
     border-radius: 50%;
 
@@ -1375,11 +1514,11 @@ input {
     height: 2px;
 
     background:
-        rgba(255,255,255,.7);
+        rgba(255, 255, 255, .7);
 
     box-shadow:
         0 0 12px
-        rgba(255,255,255,.7);
+        rgba(255, 255, 255, .7);
 
     animation:
         scan 2.8s ease-in-out infinite;
@@ -1395,7 +1534,7 @@ input {
 
     border:
         2px dashed
-        rgba(255,255,255,.5);
+        rgba(255, 255, 255, .5);
 
     border-radius: 50%;
 
@@ -1425,7 +1564,7 @@ input {
     border-radius: 10px;
 
     background:
-        rgba(255,255,255,.85);
+        rgba(255, 255, 255, .85);
 
     animation:
         wave 1.1s ease-in-out infinite;
@@ -1461,11 +1600,13 @@ input {
 }
 
 
-/* KEYFRAMES */
+/* =========================================================
+   KEYFRAMES
+========================================================= */
 
 @keyframes shine {
 
-    0%,55% {
+    0%, 55% {
         transform:
             translateX(-55%);
     }
@@ -1507,7 +1648,7 @@ input {
 
 @keyframes floatDot {
 
-    0%,100% {
+    0%, 100% {
         transform:
             translateY(0);
     }
@@ -1528,7 +1669,7 @@ input {
         opacity: .8;
     }
 
-    70%,100% {
+    70%, 100% {
         transform:
             scale(1.25);
 
@@ -1539,14 +1680,14 @@ input {
 
 @keyframes scan {
 
-    0%,100% {
+    0%, 100% {
         transform:
             translateY(-45px);
 
         opacity: 0;
     }
 
-    30%,70% {
+    30%, 70% {
         opacity: 1;
     }
 
@@ -1559,7 +1700,7 @@ input {
 
 @keyframes wave {
 
-    0%,100% {
+    0%, 100% {
         transform:
             scaleY(.55);
     }
@@ -1725,7 +1866,7 @@ input {
 
     box-shadow:
         0 5px 20px
-        rgba(0,0,0,.04);
+        rgba(0, 0, 0, .04);
 }
 
 
@@ -1815,7 +1956,6 @@ input {
 
 @media (max-width: 700px) {
 
-
     .topbar {
 
         height: 62px;
@@ -1866,6 +2006,24 @@ input {
     }
 
 
+    .language-button {
+
+        min-width: 62px;
+
+        height: 38px;
+
+        padding:
+            0 8px;
+
+        font-size: 10px;
+    }
+
+
+    .language-button span {
+        font-size: 11px;
+    }
+
+
     .create-button {
 
         min-width: 42px;
@@ -1910,14 +2068,14 @@ input {
         top: 62px;
 
         width:
-            min(290px,85vw);
+            min(290px, 85vw);
 
         transform:
             translateX(-105%);
 
         box-shadow:
             10px 0 30px
-            rgba(0,0,0,.12);
+            rgba(0, 0, 0, .12);
     }
 
 
