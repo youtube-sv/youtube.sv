@@ -10,7 +10,10 @@
 
     <title>YouTube Streaming — Hjälpcenter</title>
 
-    <!-- FAVICON -->
+
+    <!-- =====================================================
+         FAVICON
+    ====================================================== -->
 
     <link rel="icon"
           href="./favicon.ico"
@@ -31,13 +34,17 @@
           sizes="180x180">
 
 
-    <!-- CSS -->
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
 
     <link rel="stylesheet"
           href="style.css">
 
 
-    <!-- FONT AWESOME -->
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
 
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -48,6 +55,10 @@
 <body>
 
 
+<!-- =========================================================
+     TOPBAR
+========================================================= -->
+
 <header class="topbar">
 
 
@@ -56,6 +67,7 @@
 
         <button class="menu-button"
                 id="menuButton"
+                type="button"
                 aria-label="Öppna meny">
 
             <i class="fa-solid fa-bars"></i>
@@ -63,7 +75,8 @@
         </button>
 
 
-        <a href="#" class="brand">
+        <a href="#"
+           class="brand">
 
 
             <div class="brand-icon">
@@ -88,6 +101,9 @@
     </div>
 
 
+    <!-- =====================================================
+         SEARCH
+    ====================================================== -->
 
     <div class="search-container">
 
@@ -114,6 +130,7 @@
 
 
         <button class="voice-button"
+                type="button"
                 aria-label="Röstsökning">
 
             <i class="fa-solid fa-microphone"></i>
@@ -124,11 +141,15 @@
     </div>
 
 
+    <!-- =====================================================
+         TOPBAR ACTIONS
+    ====================================================== -->
 
     <div class="topbar-actions">
 
 
-        <button class="create-button contact-button">
+        <button class="create-button contact-button"
+                type="button">
 
             <i class="fa-solid fa-headset"></i>
 
@@ -137,7 +158,9 @@
         </button>
 
 
-        <button class="notification-button">
+        <button class="notification-button"
+                type="button"
+                aria-label="Aviseringar">
 
             <i class="fa-regular fa-bell"></i>
 
@@ -146,38 +169,69 @@
         </button>
 
 
-        <!-- LANGUAGE SELECTOR -->
+        <!-- =================================================
+             LANGUAGE SELECTOR
+        ================================================== -->
 
         <div class="language-selector">
 
 
             <button class="language-button"
-                    type="button">
+                    id="languageButton"
+                    type="button"
+                    aria-haspopup="true"
+                    aria-expanded="false">
 
-                SE SV
+                <span id="currentLanguage">
+                    SE SV
+                </span>
 
-                <span>⌄</span>
+                <span class="language-arrow">
+                    ⌄
+                </span>
 
             </button>
 
 
-            <div class="language-menu">
+            <div class="language-menu"
+                 id="languageMenu">
 
-                <button type="button">
+
+                <button type="button"
+                        class="language-option"
+                        data-language="FR FR">
+
                     FR FR
+
                 </button>
 
-                <button type="button">
+
+                <button type="button"
+                        class="language-option"
+                        data-language="GB EN">
+
                     GB EN
+
                 </button>
 
-                <button type="button">
+
+                <button type="button"
+                        class="language-option"
+                        data-language="SE SV">
+
                     SE SV
+
                 </button>
 
-                <button type="button">
+
+                <button type="button"
+                        class="language-option"
+                        data-language="NO NO">
+
                     NO NO
+
                 </button>
+
 
             </div>
 
@@ -192,10 +246,16 @@
 
 
 
+<!-- =========================================================
+     PAGE LAYOUT
+========================================================= -->
+
 <div class="page-layout">
 
 
-    <!-- SIDEBAR -->
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
 
     <aside class="sidebar"
            id="sidebar">
@@ -221,7 +281,6 @@
             </a>
 
 
-
             <a href="#guider"
                class="sidebar-link">
 
@@ -237,7 +296,6 @@
 
 
             </a>
-
 
 
             <a href="#hjalp"
@@ -257,9 +315,7 @@
             </a>
 
 
-
             <div class="sidebar-separator"></div>
-
 
 
             <div class="sidebar-title">
@@ -267,7 +323,6 @@
                 Kategorier
 
             </div>
-
 
 
             <a href="#"
@@ -287,7 +342,6 @@
             </a>
 
 
-
             <a href="#"
                class="sidebar-link">
 
@@ -303,7 +357,6 @@
 
 
             </a>
-
 
 
             <a href="#"
@@ -323,9 +376,7 @@
             </a>
 
 
-
             <div class="sidebar-separator"></div>
-
 
 
             <a href="#"
@@ -348,8 +399,9 @@
         </nav>
 
 
-
-        <!-- FOOTER SIDEBAR -->
+        <!-- =================================================
+             SIDEBAR FOOTER
+        ================================================== -->
 
         <div class="sidebar-footer">
 
@@ -382,52 +434,62 @@
 
 
 
-    <!-- CONTENU PRINCIPAL -->
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
 
     <main class="main-content">
 
 
-        <!-- CATEGORIES -->
+        <!-- =================================================
+             CATEGORIES
+        ================================================== -->
 
         <div class="category-bar">
 
 
-            <button class="category active">
+            <button class="category active"
+                    type="button">
 
                 Alla
 
             </button>
 
 
-            <button class="category">
+            <button class="category"
+                    type="button">
 
                 Kontorensning
 
             </button>
 
 
-            <button class="category">
+            <button class="category"
+                    type="button">
 
                 Upphovsrätt
 
             </button>
 
 
-            <button class="category">
+            <button class="category"
+                    type="button">
 
                 Kanalinställningar
 
             </button>
 
 
-            <button class="category">
+            <button class="category"
+                    type="button">
 
                 Säkerhet
 
             </button>
 
 
-            <button class="category">
+            <button class="category"
+                    type="button">
 
                 YouTube Studio
 
@@ -438,7 +500,9 @@
 
 
 
-        <!-- HERO -->
+        <!-- =================================================
+             HERO
+        ================================================== -->
 
         <section class="hero">
 
@@ -472,7 +536,8 @@
                 <div class="hero-buttons">
 
 
-                    <button class="primary-button contact-button">
+                    <button class="primary-button contact-button"
+                            type="button">
 
                         <i class="fa-solid fa-comments"></i>
 
@@ -498,7 +563,9 @@
 
 
 
-            <!-- IMAGE / ANIMATION -->
+            <!-- =================================================
+                 HERO VISUAL
+            ================================================== -->
 
             <div class="hero-visual">
 
@@ -568,7 +635,9 @@
 
 
 
-        <!-- GUIDES -->
+        <!-- =================================================
+             GUIDES
+        ================================================== -->
 
         <section class="content-section"
                  id="guider">
@@ -614,7 +683,9 @@
             <div class="video-grid">
 
 
-                <!-- CARTE 1 -->
+                <!-- =================================================
+                     CARD 1
+                ================================================== -->
 
                 <article class="video-card">
 
@@ -701,7 +772,9 @@
                         </div>
 
 
-                        <button class="more-button">
+                        <button class="more-button"
+                                type="button"
+                                aria-label="Fler alternativ">
 
                             <i class="fa-solid fa-ellipsis-vertical"></i>
 
@@ -715,7 +788,9 @@
 
 
 
-                <!-- CARTE 2 -->
+                <!-- =================================================
+                     CARD 2
+                ================================================== -->
 
                 <article class="video-card">
 
@@ -800,7 +875,9 @@
                         </div>
 
 
-                        <button class="more-button">
+                        <button class="more-button"
+                                type="button"
+                                aria-label="Fler alternativ">
 
                             <i class="fa-solid fa-ellipsis-vertical"></i>
 
@@ -814,7 +891,9 @@
 
 
 
-                <!-- CARTE 3 -->
+                <!-- =================================================
+                     CARD 3
+                ================================================== -->
 
                 <article class="video-card">
 
@@ -907,7 +986,9 @@
                         </div>
 
 
-                        <button class="more-button">
+                        <button class="more-button"
+                                type="button"
+                                aria-label="Fler alternativ">
 
                             <i class="fa-solid fa-ellipsis-vertical"></i>
 
@@ -927,7 +1008,9 @@
 
 
 
-        <!-- CONTACT -->
+        <!-- =================================================
+             CONTACT
+        ================================================== -->
 
         <section class="quick-help"
                  id="hjalp">
@@ -954,7 +1037,8 @@
             </div>
 
 
-            <button class="primary-button contact-button">
+            <button class="primary-button contact-button"
+                    type="button">
 
                 <i class="fa-solid fa-paper-plane"></i>
 
@@ -967,7 +1051,9 @@
 
 
 
-        <!-- INFO 1 -->
+        <!-- =================================================
+             INFORMATION 1
+        ================================================== -->
 
         <section class="information-section">
 
@@ -1006,7 +1092,9 @@
 
 
 
-        <!-- INFO 2 -->
+        <!-- =================================================
+             INFORMATION 2
+        ================================================== -->
 
         <section class="information-section">
 
@@ -1045,7 +1133,9 @@
 
 
 
-        <!-- FOOTER MOBILE -->
+        <!-- =================================================
+             MOBILE FOOTER
+        ================================================== -->
 
         <footer class="mobile-footer">
 
@@ -1087,13 +1177,156 @@
 
 
 
-<!-- JAVASCRIPT -->
+<!-- =========================================================
+     JAVASCRIPT PRINCIPAL
+========================================================= -->
 
 <script src="script.js"></script>
 
 
 
-<!-- TAWK.TO -->
+<!-- =========================================================
+     LANGUAGE SELECTOR JAVASCRIPT
+========================================================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    const languageButton =
+        document.getElementById("languageButton");
+
+
+    const languageMenu =
+        document.getElementById("languageMenu");
+
+
+    const currentLanguage =
+        document.getElementById("currentLanguage");
+
+
+    const languageOptions =
+        document.querySelectorAll(".language-option");
+
+
+    if (
+        !languageButton ||
+        !languageMenu ||
+        !currentLanguage
+    ) {
+        return;
+    }
+
+
+    /* ==============================================
+       OUVRIR / FERMER LE MENU
+    ============================================== */
+
+    languageButton.addEventListener("click", function (event) {
+
+        event.stopPropagation();
+
+
+        const menuIsOpen =
+            languageMenu.style.display === "flex";
+
+
+        if (menuIsOpen) {
+
+            languageMenu.style.display = "none";
+
+            languageButton.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        } else {
+
+            languageMenu.style.display = "flex";
+
+            languageButton.setAttribute(
+                "aria-expanded",
+                "true"
+            );
+
+        }
+
+    });
+
+
+    /* ==============================================
+       CHOIX DE LA LANGUE
+    ============================================== */
+
+    languageOptions.forEach(function (option) {
+
+        option.addEventListener("click", function () {
+
+
+            const selectedLanguage =
+                option.getAttribute("data-language");
+
+
+            if (selectedLanguage) {
+
+                currentLanguage.textContent =
+                    selectedLanguage;
+
+            }
+
+
+            languageMenu.style.display = "none";
+
+
+            languageButton.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+
+        });
+
+    });
+
+
+    /* ==============================================
+       FERMER SI ON CLIQUE AILLEURS
+    ============================================== */
+
+    document.addEventListener("click", function () {
+
+        languageMenu.style.display = "none";
+
+
+        languageButton.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+    });
+
+
+    /* ==============================================
+       EMPÊCHER LA FERMETURE EN CLIQUANT DANS LE MENU
+    ============================================== */
+
+    languageMenu.addEventListener("click", function (event) {
+
+        event.stopPropagation();
+
+    });
+
+
+});
+
+</script>
+
+
+
+<!-- =========================================================
+     TAWK.TO
+========================================================= -->
 
 <script type="text/javascript">
 
@@ -1107,7 +1340,8 @@
 
         var s1 = document.createElement("script");
 
-        var s0 = document.getElementsByTagName("script")[0];
+        var s0 =
+            document.getElementsByTagName("script")[0];
 
 
         s1.async = true;
@@ -1120,10 +1354,16 @@
         s1.charset = "UTF-8";
 
 
-        s1.setAttribute("crossorigin", "*");
+        s1.setAttribute(
+            "crossorigin",
+            "*"
+        );
 
 
-        s0.parentNode.insertBefore(s1, s0);
+        s0.parentNode.insertBefore(
+            s1,
+            s0
+        );
 
 
     })();
